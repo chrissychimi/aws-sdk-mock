@@ -1,3 +1,17 @@
+# Forked aws-sdk-mock
+
+See below for details on aws-sdk-mock. This fork updates the sinon dependency to 2.2.0, which 
+plays better with Webpack. Towards that goal, it **removes** the setSDK and setSDKInstance methods,
+which aren't required for the portal. 
+
+If:
+
+- anyone would like to play around with Webpack context to make setSDK work again, have at it.
+
+- anyone gets a deprecation or Webpack error when testing with this module, file an issue.
+
+
+
 # aws-sdk-mock
 
 AWSome mocks for Javascript aws-sdk services.
